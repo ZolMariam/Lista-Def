@@ -1,4 +1,7 @@
 def binario_para_decimal(binario):
+    if not all(c in "01" for c in binario):
+        return ""
+    
     decimal = 0
     long = len(binario)
     
